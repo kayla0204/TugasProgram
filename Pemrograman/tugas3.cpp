@@ -1,23 +1,16 @@
 #include <iostream>
 #include <string>
+#include <map>
 
 std::string haribesok(const std::string& hari_sekarang) {
-    const int hari_dalam_minggu = 7;
-    const std::string hari[hari_dalam_minggu] = {
-        "senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu"
+    std::map<std::string, std::string> hari = {
+        {"senin", "selasa"}, {"selasa", "rabu"}, {"rabu", "kamis"}, {"kamis", "jumat"}, {"jumat", "sabtu"}, {"sabtu", "minggu"}, {"minggu", "senin"}
     };
-    const std::string hari_besok[hari_dalam_minggu] = {
-        "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu", "senin"
-    };
-
-    for (int i = 0; i < hari_dalam_minggu; ++i) {
-        if (hari_sekarang == hari[i]) {
-            return hari_besok[i];
-        }
+    auto it = hari.find(hari_sekarang);
+    if (it != hari.end()) {
+        return it->second;
     }
-
-    std::cout << "Hari yang salah: " << hari_sekarang << std::endl;
-    return "";
+    return "Hari yang tidak valid";
 }
 
 int main() {
@@ -25,8 +18,6 @@ int main() {
     std::cout << "Masukan nama hari dalam seminggu (senin-minggu): ";
     std::cin >> hari_sekarang;
     std::string hari_besok = haribesok(hari_sekarang);
-    if (!hari_besok.empty()) {
-        std::cout << "Hari selanjutnya adalah: " << hari_besok << std::endl;
-    }
+    std::cout << "Hari selanjutnya adalah: " << hari_besok << std::endl;
     return 0;
 }
