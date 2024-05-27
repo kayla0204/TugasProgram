@@ -1,4 +1,4 @@
-#percobaan
+# percobaan
 ```
 #include <iostream>
 #include <string>
@@ -66,10 +66,9 @@ int main() {
 }
 
 ```
-#output
-```
+# output
+![oop1](https://github.com/kayla0204/TugasProgram/assets/98437578/ad37151a-ac17-4f50-b8e1-0b7b09e1fb67)
 
-![oop1](https://github.com/kayla0204/TugasProgram/assets/98437578/2e7f81bd-b12b-449a-a2f3-a799787a154a)
 
 ```
 #Praktikum PII
@@ -154,9 +153,6 @@ int main() {
     return 0;
 }
 
-```
-#output
-```
-![oop2](https://github.com/kayla0204/TugasProgram/assets/98437578/99a1e732-57c8-45cd-ba2f-f8e617f766d2)
 
-
+## output
+![oop2](https://github.com/kayla0204/TugasProgram/assets/98437578/92a23cc3-0cd7-4106-be1e-67ecad047b28)
