@@ -55,7 +55,7 @@ cout << endl;
 ```
 # output
 ![Screenshot (24)](https://github.com/kayla0204/TugasProgram/assets/98437578/bc1cd721-7211-4d13-b313-147baf2a3ac9)
-# Tugas
+# praktikum
 ```
 #include <iostream>
 #include <string>
